@@ -235,20 +235,20 @@ marquee {
 
 #card1 {
     background-image: url(img/Hacking\ 2.jpg);
-    background-size: 434px;
+    background-size: cover;
     background-position: center;
 
 }
 
 #card2 {
     background-image: url(img/code.jpg);
-    background-size: 300px;
+    background-size: cover;
     background-position: center;
 }
 
 #card3 {
     background-image: url(img/pexels-cottonbro-studio-8721318.jpg);
-    background-size: 450px;
+    background-size: cover;
     background-position: center;
 }
 
