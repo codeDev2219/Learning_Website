@@ -9,8 +9,9 @@
 
 html,
 body {
-    height: 100%;
+    height: 100vh;
     width: 100%;
+    /* perspective: 800px; */
 }
 
 #nav {
@@ -228,6 +229,8 @@ marquee {
     border-radius: 10px;
     /* overflow: hidden; */
     z-index: 10;
+    overflow: hidden;
+    transition: all ease 0.6s;
 }
 
 #card1 {
@@ -247,4 +250,33 @@ marquee {
     background-image: url(img/pexels-cottonbro-studio-8721318.jpg);
     background-size: 450px;
     background-position: center;
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    background-color: #26eac3;
+    padding: 8px;
+    padding-top: 100px;
+    opacity: 0;
+    transition: all ease 0.6s;
+}
+
+.overlay h4 {
+    color: #000;
+    font-size: 20px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    margin-bottom: 20px;
+    font-weight: 800;
+}
+
+.overlay p {
+    color: #000;
+    font-size: 12px;
+}
+
+.cards :hover {
+    opacity: 1;
+    transform: rotate3d(-1, 1, 0, 20deg);
 }
